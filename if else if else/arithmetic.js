@@ -1,0 +1,12 @@
+const prompt = require("prompt-sync")();
+let a = prompt("enter the number a");
+let b = prompt("enter the number b");
+let c = prompt("enter the number c");
+let resultList = new Array();
+resultList.push(a + b * c);
+resultList.push((a % b) + c);
+resultList.push(a + b / c);
+resultList.push(a * b + c);
+console.log(resultList);
+console.log(Math.max(...resultList));
+console.log(Math.min(...resultList));
